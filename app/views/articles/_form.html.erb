@@ -1,12 +1,7 @@
+<!--obj komt als variabele van andere pagina's, en kan bvb @article zijn, maar ook iets anders-->
+<!--op die manier worden bepaalde stukken code maar 1 keer geschreven-->
 
-  <% if @article.errors.any? %>
-    <h2>The following errors prevented the article from neing created</h2>
-    <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  <% end %>
+<%= render 'shared/errors', obj: @article %>
 
 <div class="row">
   <div class="col-xs-12">

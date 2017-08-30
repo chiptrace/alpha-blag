@@ -1,4 +1,97 @@
-$navbar-default-bg: white;
+
+  // -------------------------------
+  // Chip Trace kleuren
+  //   background: #c8d262;
+  //   background: -webkit-linear-gradient(#c8d262, #bdcd17) left repeat;
+  //   background: linear-gradient(#c8d262, #bdcd17) left repeat;
+  //   height: 200px;
+  //   position: relative;
+  //   margin: 40px 20px;
+  //   border: 1px solid #939f12;
+  //   border-radius: 5px;
+  // -------------------------------
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar {
+  background: #bdcd17;
+  border: 2px solid #939f12;
+}
+
+body {
+  background-color: Gainsboro;
+}
+
+#logo {
+  float: left;
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron-fluid {
+  border-radius: 20px;
+  border: 2px solid #939f12;
+  background-image: asset-url('bedankt.jpg');
+  background-size: cover;
+  height: 650px;
+}
+
+.jumbotron-fluid h1 {
+  color: #939f12;
+  text-align: center;
+  margin-bottom: 35px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: -2px;
+  font-weight: bold;
+  background-color: #bdcd17;
+  
+}
+
+.btn-xlarge:hover {
+  color: #fff;
+  background-color: #939f12;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px;
+  background-color: silver;
+  border: 2px solid #939f12;
+}
+
+footer a:hover {
+  color: black;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}

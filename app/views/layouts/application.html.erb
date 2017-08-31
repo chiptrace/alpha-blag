@@ -16,6 +16,9 @@
    <footer>
      <%= render 'layouts/footer' %>
    </footer>
+   <!--debugger actief maken, enkel voor de evironment development-->
+   <!--Indien er problemen zijn, zal dit de gegevens van de bug op scherm plaatsen -->
+   <%= debug(params) if Rails.env.development? %>
   </body>
 
 </html>

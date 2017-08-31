@@ -103,6 +103,9 @@ body {
 
 
 footer {
+  font-weight: bold;
+  font-size: 10px;
+  height: 35px;
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px;
@@ -115,16 +118,12 @@ footer a:hover {
   color: black;
 }
 
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
+footer a1 {
   float: left;
   margin-left: 15px;
+}
+
+footer a2 {
+  float: right;
+  margin-right: 15px;
 }

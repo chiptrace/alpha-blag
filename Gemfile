@@ -36,6 +36,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# gems to paginate when a lot of items have to be shown
+gem 'will_paginate', '3.1.5'    # version 3.0.7 has a conflict with rails 5..
+gem 'bootstrap-will_paginate', '0.0.10'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

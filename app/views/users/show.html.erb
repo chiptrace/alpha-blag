@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <div class="center">
+      <h2>Welcome to <%= @user.username %>'s page</h2>
+        <!--We gaan www.gravatar.com gebruiken om een foto te koppelen aan de email van de gebruikers-->
+        <%= gravatar_for @user, size: 150 %>
+      <h4><strong><u><%= @user.username %>'s articles</h4>
+    </div>
+    <%= render 'articles/article', obj: @user.articles %>
+  </div>
+</div>

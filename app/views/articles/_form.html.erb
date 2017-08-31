@@ -1,11 +1,12 @@
-<!--obj komt als variabele van andere pagina's, en kan bvb @article zijn, maar ook iets anders-->
+<!--obj komt als variabele van andere pagina's, en kan bvb @article / @user zijn, maar ook iets anders-->
 <!--op die manier worden bepaalde stukken code maar 1 keer geschreven-->
 
 <%= render 'shared/errors', obj: @article %>
 
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-xs-8 col-xs-offset-2">
     <%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+    
       <div class="form-group">
         <div class="control-label col-sm-2">
           <%= f.label :title %>

@@ -13,7 +13,6 @@
               last updated : <%= time_ago_in_words(article.updated_at) %> ago</small>
           </div>
         </div>
-        
         <!--Tonen van de soorten categorieën-->
         <% if article.categories.any? %>    
           <p>Categories : <%= render article.categories %></p>

@@ -18,7 +18,6 @@
       <% end %>
     <h4 class="discription"><strong><u>Description</u></strong></h4>
     <%= simple_format(@article.description) %>
-
     <!--Tonen van de soorten categorieën-->
     <% if @article.categories.any? %>    
       <p>Categories : <%= render @article.categories %></p>

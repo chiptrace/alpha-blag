@@ -2,9 +2,14 @@ require 'test_helper'
 
 class CreateCategoriesTest < ActionDispatch::IntegrationTest
   
+  def setup
+      @user = User.create(username: "John", email: "john@example.com", password: "password", admin: true)
+  end
+
   # test "Get new category for and create category" do
+  #   sing_in_as(@user, "password")
   #   get new_category_path
-  #   assert_redirected_to 'categories/new'       # OPL => https://stackoverflow.com/questions/27643614/rails-unit-test-assert-template-failure
+  #   assert_redirected_to '/categories/new'       # OPL => https://stackoverflow.com/questions/27643614/rails-unit-test-assert-template-failure
   #   assert_difference 'Category.count', 1 do
   #     # issues met rails 5 en code in lessen ifv tests => geven errors en failures
   #     # OPL : anders notatie van de tests nodig : info => https://stackdelivery.com/question/ror-testing-errors-expecting-categoriesnew-but-rendering-with
@@ -16,8 +21,9 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
   # end
   
   # test "Invalid category submission results in falure" do
+  #   sing_in_as(@user, "password")
   #   get new_category_path
-  #   assert_redirected_to 'categories/new'       # OPL => https://stackoverflow.com/questions/27643614/rails-unit-test-assert-template-failure
+  #   assert_redirected_to '/categories/new'       # OPL => https://stackoverflow.com/questions/27643614/rails-unit-test-assert-template-failure
   #   assert_no_difference 'Category.count' do
   #     # issues met rails 5 en code in lessen ifv tests => geven errors en failures
   #     # OPL : anders notatie van de tests nodig : info => https://stackdelivery.com/question/ror-testing-errors-expecting-categoriesnew-but-rendering-with
